@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario html</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<main class="container-fluid border p-0">
+    <header>
+        <!--Titulo-->
+            
+                <div class="border border-0 bg-secondary-subtle">
+                <h1>Paiment for examples</h1>
+                </div>
+           
+    </header>
+
+    <!--Alerta-->
+    <div class="col-12 mx-auto p-2">
+        <div class="alert alert-danger" role="alert">
+            Some fields are missing
+        </div>
+    </div>
+    
+    <!--Primera columna-->
+
+    <form>
+        <div class="row align-items p-1 ">
+            <div class="col-md-5 ">
+                <label for="disabledTextInput" class="form-label">Card #</label>
+                <input class="form-control form-control-sm" type="text" placeholder="XXXXXXXXX"
+                    aria-label=".form-control-sm example" >
+            </div>
+        
+            <div class="col-md-3">
+                <label for="disabledTextInput" class="form-label">C #</label>
+                <input class="form-control form-control-sm" type="text" placeholder="0000"
+                    aria-label=".form-control-sm example">
+            </div>
+        
+        
+            <div class="col-md-4">
+                <label for="disabledTextInput" class="form-label">Amount</label>
+                <input class="form-control form-control-sm" type="text" placeholder="Amount"
+                    aria-label=".form-control-sm example">
+            </div>
+        </div>
+        
+<!--segunda columna-->
+        <div class="row align-items p-1">
+        
+            <div class="col-md-6">
+                <label for="disabledTextInput" class="form-label">First Name</label>
+                <input class="form-control form-control-sm" type="text" placeholder="" aria-label=".form-control-sm example">
+            </div>
+        
+            <div class="col-md-6">
+                <label for="disabledTextInput" class="form-label">Last Name</label>
+                <input class="form-control form-control-sm" type="text" placeholder="" aria-label=".form-control-sm example">
+            </div>
+        </div>
+    <!--tercera fila -->
+        <div class="row align-items p-1">
+            <div class="col-md-6">
+                <label for="disabledTextInput" class="form-label">City</label>
+                <input class="form-control form-control-sm" type="text" placeholder=""
+                    aria-label=".form-control-sm example" >
+            </div>
+        
+            <div class="col-md-3">
+                <label for="disabledTextInput " class="form-label ">State</label>
+                <select class="form-select form-select-sm" aria-label="Default select example  ">
+                    <option selected>Pick a state</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                
+            </div>
+        
+        
+            <div class="col-md-3">
+                <label for="disabledTextInput" class="form-label">Postal Code</label>
+                <input class="form-control form-control-sm" type="text" placeholder=""
+                    aria-label=".form-control-sm example">
+            </div>
+        </div>
+<!--cauarta fila-->
+
+        <div class="row align-items p-1">
+        
+            <div class="col-md-6">
+                <label for="disabledTextInput" class="form-label">We accept:</label>
+                
+            </div>
+
+            <div class="col-md-6">
+                <label for="disabledTextInput" class="form-label">Message</label>
+                
+            </div>
+        </div>
+
+        <div class="row align-items p-1 m-1 ">
+        
+            <div class="col-md-6 ">
+                <div class=" btn btn-secondary ">
+            
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </label>
+                    </div>
+            
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">
+                            <i class="fa-brands fa-cc-diners-club"></i>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating w">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2"></label>
+                    <p>Add any note here.
+                  </div>
+                
+            </div>
+        </div>
+
+        <!--footer-->
+    <footer>
+        
+            <div class="border border-0 bg-secondary-subtle d-flex justify-content-end ">
+                <button type="button" class="btn btn-secondary  m-1 p-1">Cancel</button>
+                <button type="button" class="btn btn-primary  m-1 p-1">Send</button>
+            </div>
+        
+    </footer>
+    </form>
+</main>
+
+</body>
+</html>
